@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000; /* Hitam */
+  color: #ffd000;      /* Kuning */
+  font-family: Arial, sans-serif;
+}
+
+/* Kotak jam */
+#clock {
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 20px;
+
+  /* Kuning transparan */
+  background: rgba(255, 208, 0, 0.1);
+
+  backdrop-filter: blur(10px);
+  animation: fadeIn 2s ease, floating 4s ease-in-out infinite;
+
+  /* Glow kuning */
+  box-shadow: 0 0 20px rgba(255, 208, 0, 0.3);
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glow angka pertama (jam) */
+#time span:first-child {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffd000;
+  }
+  to {
+    text-shadow: 0 0 25px #ffd000;
+  }
+}
+
+/* Gerakan pelan naik turun */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+#time {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #ffd000;
+}
+
+#time div {
+  display: flex;
+  flex-direction: column;
+}
