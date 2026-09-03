@@ -1,0 +1,119 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Kalkulator | M.Bayu Alfariza</title> <link rel="stylesheet" href="style.css"> </head> <body> <div class="background-circle circle-1"></div> <div class="background-circle circle-2"></div> <main class="calculator">
+<div class="top-bar">
+  <div>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <span class="brand">M.Bayu</span>
+</div>
+
+<div class="title">
+  <span>CALCULATOR</span>
+  <h1>Kalkulator</h1>
+</div>
+
+<div class="display">
+
+  <div class="calculation" id="history"></div>
+
+  <div class="result" id="display">
+    0
+  </div>
+
+</div>
+
+<div class="buttons">
+
+  <button class="btn function" onclick="clearDisplay()">
+    AC
+  </button>
+
+  <button class="btn function" onclick="deleteNumber()">
+    ⌫
+  </button>
+
+  <button class="btn function" onclick="percentage()">
+    %
+  </button>
+
+  <button class="btn operator" onclick="chooseOperator('/')">
+    ÷
+  </button>
+
+
+  <button class="btn" onclick="appendNumber('7')">
+    7
+  </button>
+
+  <button class="btn" onclick="appendNumber('8')">
+    8
+  </button>
+
+  <button class="btn" onclick="appendNumber('9')">
+    9
+  </button>
+
+  <button class="btn operator" onclick="chooseOperator('*')">
+    ×
+  </button>
+
+
+  <button class="btn" onclick="appendNumber('4')">
+    4
+  </button>
+
+  <button class="btn" onclick="appendNumber('5')">
+    5
+  </button>
+
+  <button class="btn" onclick="appendNumber('6')">
+    6
+  </button>
+
+  <button class="btn operator" onclick="chooseOperator('-')">
+    −
+  </button>
+
+
+  <button class="btn" onclick="appendNumber('1')">
+    1
+  </button>
+
+  <button class="btn" onclick="appendNumber('2')">
+    2
+  </button>
+
+  <button class="btn" onclick="appendNumber('3')">
+    3
+  </button>
+
+  <button class="btn operator" onclick="chooseOperator('+')">
+    +
+  </button>
+
+
+  <button class="btn zero" onclick="appendNumber('0')">
+    0
+  </button>
+
+  <button class="btn" onclick="appendDecimal()">
+    .
+  </button>
+
+  <button class="btn equal" onclick="calculate()">
+    =
+  </button>
+
+</div>
+
+<a href="../index.html" class="back">
+  <span>←</span> Kembali ke Portofolio
+</a>
+
+<p class="keyboard">
+  Tip: Gunakan keyboard untuk menghitung
+</p>
+
+</main> <script src="script.js"></script> </body> </html>
