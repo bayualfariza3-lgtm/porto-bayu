@@ -1,0 +1,145 @@
+<!DOCTYPE html> <html lang="id"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Tabunganku | Penghitung Tabungan</title> <link rel="stylesheet" href="style.css"> </head> <body> <div class="background-circle circle-1"></div> <div class="background-circle circle-2"></div> <main class="container">
+<div class="header">
+  <div class="logo">💰 Tabunganku</div>
+  <p>Atur dan pantau target tabunganmu</p>
+</div>
+
+<section class="card">
+
+  <div class="title">
+    <span>TARGET TABUNGAN</span>
+    <h1>Berapa yang ingin kamu tabung?</h1>
+  </div>
+
+  <div class="input-group">
+    <label>Target Tabungan</label>
+
+    <div class="money-input">
+      <span>Rp</span>
+      <input
+        type="number"
+        id="target"
+        placeholder="Contoh: 5000000"
+      >
+    </div>
+  </div>
+
+<div class="input-group">
+  <label>Sudah Ditabung</label>
+
+  <div class="money-input">
+    <span>Rp</span>
+    <input
+      type="number"
+      id="saved"
+      placeholder="Contoh: 1000000"
+    >
+  </div>
+</div>
+
+<div class="input-group">
+  <label>Tambah Tabungan</label>
+
+  <div class="money-input">
+    <span>Rp</span>
+    <input
+      type="number"
+      id="addMoney"
+      placeholder="Contoh: 50000"
+    >
+  </div>
+</div>
+
+<button onclick="addSaving()" class="add-btn">
+  + Tambah ke Tabungan
+</button>
+
+
+  <button onclick="calculate()" class="calculate-btn">
+    🧮 Hitung Tabungan
+  </button>
+
+</section>
+
+
+<section class="result-card" id="result">
+
+  <div class="result-header">
+    <div>
+      <span>PROGRESS TABUNGAN</span>
+      <h2 id="percentage">0%</h2>
+    </div>
+
+    <div class="target-icon">
+      🎯
+    </div>
+  </div>
+
+
+  <div class="progress-container">
+
+    <div
+      class="progress-bar"
+      id="progressBar"
+    ></div>
+
+  </div>
+
+
+  <div class="money-result">
+
+    <div class="result-item">
+      <small>Sudah Ditabung</small>
+      <strong id="savedResult">Rp0</strong>
+    </div>
+
+    <div class="result-item">
+      <small>Sisa Tabungan</small>
+      <strong id="remaining">Rp0</strong>
+    </div>
+
+    <div class="result-item">
+      <small>Target</small>
+      <strong id="targetResult">Rp0</strong>
+    </div>
+
+  </div>
+
+  <div class="message" id="message">
+    Yuk mulai menabung! 🚀
+  </div>
+
+</section>
+
+
+<section class="tips">
+
+  <h2>💡 Tips Menabung</h2>
+
+  <div class="tips-grid">
+
+    <div>
+      <span>01</span>
+      <p>Tentukan target tabungan yang jelas.</p>
+    </div>
+
+    <div>
+      <span>02</span>
+      <p>Sisihkan uang secara rutin.</p>
+    </div>
+
+    <div>
+      <span>03</span>
+      <p>Catat setiap uang yang kamu tabung.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<a href="portofolio/index.html" class="back">
+  ← Kembali ke Portofolio
+</a>
+
+</main> <script src="script.js"></script> </body> </html>
